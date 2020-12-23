@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   root 'top#index'
 
+  resources :list, only: %i(new create)
+
 end
