@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   resources :list, only: %i(new create edit update destroy)
 
+  resources :user, only: %i(edit update)
 end
